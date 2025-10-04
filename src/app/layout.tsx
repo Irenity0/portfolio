@@ -37,10 +37,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <div className="w-3/4  mt-5 lg:w-2/5 flex flex-col gap-6 min-h-screen mx-auto">
+          <div className="w-3/4  mt-5 lg:w-2/5 flex flex-col gap-6  mx-auto">
         <Navbar/>
         <Toaster/>
-        {children}
+        <div className="min-h-screen">
+        {children}      
+        </div>
         <Footer/>
         </div>
         </ThemeProvider>

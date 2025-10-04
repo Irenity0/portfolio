@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center py-4">
-      <h1 className="font-bold">Afra Anjum</h1>
+      <Link href={'/'} className="font-bold">Afra Anjum</Link>
 
       <div className="flex items-center gap-1 text-sm font-semibold text-stone-400">
         {links.map((link, index) => {
@@ -32,7 +32,7 @@ const Navbar = () => {
               >
                 {link.name}
               </Link>
-              {index < links.length - 1 && <span className="text-neutral-600">/</span>}
+              {index < links.length - 1 && <span className="text-stone-600">/</span>}
             </React.Fragment>
           );
         })}

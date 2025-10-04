@@ -43,7 +43,7 @@ export default function Footer() {
         {/* Social Links */}
         <Link
           href="https://x.com/AfraAnjum387893"
-          className="h-8 rounded-full border border-gray-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
+          className="h-8 rounded-full border border-stone-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
           prefetch={false}
         >
           <span className="sr-only">Twitter</span>
@@ -53,7 +53,7 @@ export default function Footer() {
         <Link
           target="_blank"
           href="https://github.com/irenity0"
-          className="h-8 rounded-full border border-gray-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
+          className="h-8 rounded-full border border-stone-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
           prefetch={false}
         >
           <span className="sr-only">GitHub</span>
@@ -62,7 +62,7 @@ export default function Footer() {
 
         <Link
           href="https://www.youtube.com/@SomeoneReader"
-          className="h-8 rounded-full border border-gray-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
+          className="h-8 rounded-full border border-stone-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
           prefetch={false}
         >
           <span className="sr-only">YouTube</span>
@@ -74,13 +74,13 @@ export default function Footer() {
         {user ? (
           <button
             onClick={handleLogout}
-            className="h-8 rounded-full border border-gray-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
+            className="h-8 rounded-full border border-stone-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"
             disabled={loading}
           >
-            {loading ? <Spinner/> : <LogOut className="h-8 rounded-full border border-gray-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"/>}
+            {loading ? <Spinner/> : <LogOut className="h-8 rounded-full border border-stone-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"/>}
           </button>
         ) : (
-        <LogIn className="h-8 rounded-full border border-gray-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"/>
+        <LogIn className="h-8 rounded-full border border-stone-200 dark:border-stone-700 w-8 hover:scale-125 hover:rotate-12 transition-transform p-2"/>
         )}
       </div>
     </footer>
