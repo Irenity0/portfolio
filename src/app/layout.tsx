@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "./components/theme-provider";
+import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistMono.variable} antialiased`}
+        className={`${geistMono.variable} font-mono antialiased`}
       >
         <ThemeProvider
         attribute="class"
@@ -35,9 +37,11 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
         >
-          <div className="w-3/4 mt-10 lg:w-2/5 flex flex-col justify-between min-h-screen mx-auto">
+          <div className="w-3/4  mt-5 lg:w-2/5 flex flex-col gap-6 min-h-screen mx-auto">
         <Navbar/>
+        <Toaster/>
         {children}
+        <Footer/>
         </div>
         </ThemeProvider>
       </body>
