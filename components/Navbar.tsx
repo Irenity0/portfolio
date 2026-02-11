@@ -5,8 +5,13 @@ import DecryptedText from "./DecryptedText";
 export default function Navbar() {
   return (
     <>
-      <nav className="grid text-center divide-x font-semibold text-xl  grid-cols-4 uppercase font-mono">
-        <Link href={"/"} className="pt-3">
+      <nav className="grid text-center divide-x font-semibold text-xl  grid-cols-12 uppercase font-mono">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+<Link href={"/"} className="pt-8">
           <DecryptedText
           text="Home"
           speed={80}
@@ -16,9 +21,7 @@ export default function Navbar() {
           useOriginalCharsOnly={false}
         />
         </Link>
-        
-
-        <Link href={"/projects"} className="pt-3">
+        <Link href={"/projects"} className="pt-8">
           <DecryptedText
           text="Projects"
           speed={80}
@@ -28,7 +31,7 @@ export default function Navbar() {
           useOriginalCharsOnly={false}
         />
         </Link>
-        <Link href={"/notes"} className="pt-3">
+        <Link href={"/notes"} className="pt-8">
           <DecryptedText
           text="notes"
           speed={80}
@@ -38,7 +41,7 @@ export default function Navbar() {
           useOriginalCharsOnly={false}
         />
         </Link>
-        <Link href={"/contact"} className="pt-3">
+        <Link href={"/contact"} className="pt-8">
           <DecryptedText
           text="contacts"
           speed={80}
@@ -48,6 +51,11 @@ export default function Navbar() {
           useOriginalCharsOnly={false}
         />
         </Link>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </nav>
     </>
   );
